@@ -14,4 +14,15 @@ fetch('includes/footer.html')
 	})
 	.catch(error => console.error('Error fetching the HTML:', error));
 
+fetch('includes/sidebar.html')
+	.then(response => response.text()) // Convert the response to text
+	.then(data => {
+		document.getElementById('sidebar').innerHTML = data; // Insert the content into the div
+	})
+	.catch(error => console.error('Error fetching the HTML:', error));
+
 // to include header footer sidebar bottombar ends
+
+window.onload = function () {
+       scrolly();
+    }; 
