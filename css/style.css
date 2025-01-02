@@ -101,6 +101,13 @@ ul.social li {
   opacity: 0.6;
 }
 
+.navbar{
+  position: absolute;
+  top: 44px;
+  width: 100%;
+  z-index: 999;
+}
+
 h1,
 h3.h3,
 h4,
@@ -347,8 +354,11 @@ h4 {
 }
 
 footer {
-  background-color: #26242a;
-  padding: 100px 0;
+  background-image: url(../images/footer_bg_2.png), url(../images/footer_bg_1.jpg);
+  background-position: top, center;
+  background-size: 100%, cover;
+  background-repeat: no-repeat, no-repeat;
+  padding: 250px 0 100px 0;
 }
 
 footer h4 {
@@ -430,11 +440,12 @@ footer ul li a:hover span {
 }
 
 .page-header {
-  padding: 80px 0 30px;
-  background-color: #f5f5f5;
+  padding: 250px 0;
+  background-image: url(../images/page-header2.png), url(../images/page-header.jpg);
+  background-size: 100%, cover;
+  background-position: bottom, center;
+  background-repeat: no-repeat, no-repeat;
   text-align: center;
-  background-size: 100%;
-  background-position: center;
   color: #292929;
 }
 
@@ -451,6 +462,11 @@ footer ul li a:hover span {
 ul.ul li {
   list-style-image: url(../images/ul.png);
   margin: 10px 0 10px;
+}
+
+ul.ul li span{
+  color: var(--bs-primary);
+  font-weight: bold;
 }
 
 ul.hover {
